@@ -1,28 +1,28 @@
 <template>
   <div class="demo-webfont demo">
     <div class="abc">
-      <div class="empty">1</div>
-      <div class="empty">1</div>
-      <div class="empty">1</div>
-      <div class="empty">1</div>
-      <div class="empty">1</div>
-      <div class="empty">1</div>
-      <div class="empty">1</div>
-      <div class="empty">1</div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
       <div class="guid-1" ref="guid-1" style="width: 300px; overflow: hidden">
         <p>
           <span>guid-1</span>
         </p>
       </div>
 
-      <div class="empty">1</div>
+      <div class="empty"></div>
       <div class="guid-4" ref="guid-4" style="width: 300px; overflow: hidden">
         guid-4
       </div>
-      <div class="empty">1</div>
-      <div class="empty">1</div>
+      <div class="empty"></div>
+      <div class="empty"></div>
       <div v-if="visible">
-        <div class="empty">5</div>
+        <div class="empty"></div>
         <div
           class="guid-2"
           ref="guid-2"
@@ -35,7 +35,7 @@
         >
           <p>guid-2</p>
         </div>
-        <div class="empty">8</div>
+        <div class="empty"></div>
         <div class="wrap">
           <div
             class="guid-3"
@@ -45,7 +45,7 @@
             <p>guid-3</p>
           </div>
         </div>
-        <div class="empty">8</div>
+        <div class="empty"></div>
       </div>
     </div>
 
@@ -74,7 +74,7 @@
       @next="next"
       :target-selector="selector"
     >
-      <div>这是功能点一详情1</div>
+      <div>这是功能点一详情</div>
       <span @click="next"> 下一个 </span>
     </feat-guide>
     <feat-guide
