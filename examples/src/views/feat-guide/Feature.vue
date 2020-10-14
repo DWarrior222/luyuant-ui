@@ -56,8 +56,8 @@
       :target-selector="selector"
     >
       <div>这是功能点一</div>
-      <span @click="openFirst(1)"> 查看 </span>
-      <span @click="next"> 下一个 </span>
+      <button @click="openFirst(1)"> 查看 </button>
+      <button @click="next"> 下一个 </button>
     </feat-guide>
     <feat-guide
       v-if="guideName === 1"
@@ -66,7 +66,7 @@
       :target-selector="selector"
     >
       <div>这是功能点二</div>
-      <span @click="close"> 关闭 </span>
+      <button @click="close"> 关闭 </button>
     </feat-guide>
     <feat-guide
       v-if="guideName === 2"
@@ -75,7 +75,7 @@
       :target-selector="selector"
     >
       <div>这是功能点一详情</div>
-      <span @click="next"> 下一个 </span>
+      <button @click="next"> 下一个 </button>
     </feat-guide>
     <feat-guide
       v-if="guideName === 3"
@@ -84,7 +84,7 @@
       :target-selector="selector"
     >
       <div>这是功能点一详情2</div>
-      <span @click="closeFirst"> 下一个 </span>
+      <button @click="closeFirst"> 下一个 </button>
     </feat-guide>
   </div>
 </template>

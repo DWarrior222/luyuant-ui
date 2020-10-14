@@ -80,7 +80,6 @@ export default {
   methods: {
     next() {
       this.$refs["feat-guide"].next();
-      this.guideName = null;
     },
     close() {
       this.guideName = null;
