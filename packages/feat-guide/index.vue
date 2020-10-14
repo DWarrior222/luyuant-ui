@@ -40,8 +40,8 @@ export default {
       const { targetSelector } = this;
       if (Array.isArray(targetSelector)) {
         const list = [...targetSelector].map(v => {
-          const { guideName, el } = v
-          return { guideName, el: util.queryEl(el) }
+          const { guideName, el, ...args } = v
+          return { guideName, el: util.queryEl(el), ...args }
         })
         this.stepControler = this.stepGen(list);
         this.stepControler.next();
@@ -75,7 +75,7 @@ export default {
     next() {
       this.guidShow = false;
       off(window, "resize", this.featurePosition);
-      this.$emit("next");
+      !this.stepControler && this.$emit("next");
       this.stepControler && this.stepControler.next(true);
       document.querySelector('body').style.overflow = ''
     },
