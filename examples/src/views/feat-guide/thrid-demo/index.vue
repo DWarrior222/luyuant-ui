@@ -34,13 +34,11 @@ export default {
     };
   },
   mounted() {
-    setTimeout(() => {
-      this.mainList = [
-        { guideName: "first-guide", el: this.$refs["create-box"] },
-        { guideName: "second-guide", el: this.$refs["fill"] },
-        { guideName: "third-guide", el: this.$refs["rotate"] },
-      ];
-    }, 2000);
+    this.mainList = [
+      { guideName: "first-guide", el: this.$refs["create-box"] },
+      { guideName: "second-guide", el: this.$refs["fill"] },
+      { guideName: "third-guide", el: this.$refs["rotate"] },
+    ];
   },
   methods: {
     next(arg) {
