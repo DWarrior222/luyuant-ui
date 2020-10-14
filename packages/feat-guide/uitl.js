@@ -3,7 +3,7 @@ function queryEl(el) {
   if (typeof el === "string") {
     return document.querySelector(el)
   }
-  if (Object.prototype.toString.call(el) === '[object HTMLDivElement]') {
+  if (/\[object HTML\w*Element\]/.test(Object.prototype.toString.call(el))) {
     return el
   }
 }
